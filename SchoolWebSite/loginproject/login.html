@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/9dc85c2239.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftsection">
+            <header>
+                <h1>Welcome Back</h1>
+                <p>To keep connected with us please login with your personal information by username and
+                    password</p>
+            </header>
+            <main>
+                <form method="post">
+                    <div class="input-control">
+                        <input type="text" name="username" id="username-input" class="username" placeholder=" Username">
+                        <i class="fa-sharp fa-solid fa-user fa-sm" style="color: #8417ea;"></i>
+                    </div>
+                    <div class="input-control">
+                        <input type="password" name="secret" id="secret" class="secret" placeholder=" Password">
+                        <i class="fa-solid fa-lock fa-sm" style="color: #8417ea;"></i>
+                    </div>
+                    <div class="forgot-password"> <a href="#">Forget password?</a></div>
+                    <p class="check-button">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox" class="check-content" id="check">Remember me</label>
+                    </p>
+                </form>
+                <div class="button">
+                    <input class="loginnow-button" type="submit" value="Login Now" id="loginbutton">
+                    <a href="/signupprojet/signup.html" class="link-signup"><input class="signup-button" type="submit"
+                            value="Create Account"></a>
+                </div>
+                <div class="popup" id="popup">
+                    <h2>Sorry!</h2>
+                    <p>Your Information is incorrect,<br>you should Sign Up!</p>
+                    <button type="button" class="popup-button" onclick="closePopup()">OK, Close</button>
+                </div>
+            </main>
+            <footer>
+                <p>Don't have an account? <a href="/signupprojet/signup.html">Sign up</a></p>
+            </footer>
+        </div>
+        <div class="rightsection">
+            <img src="undraw_predictive_analytics_re_wxt8 copie.svg">
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

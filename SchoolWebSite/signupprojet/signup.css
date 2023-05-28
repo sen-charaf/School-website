@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Inter:wght@600&family=Lora&family=Raleway:ital,wght@1,100;1,300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Inter:wght@600&family=Lora&family=Poppins:wght@200&family=Raleway:ital,wght@1,100;1,300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Inter:wght@600&family=Lora&family=Poppins:wght@200&family=Raleway:ital,wght@1,100;1,300&family=Roboto:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(209, 209, 209) 0%, rgb(209, 209, 209)50%, rgba(94, 36, 193, 0.89) 50%,
+            rgba(94, 36, 193, 0.89) 100%);
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 44px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+}
+
+header p {
+    padding-top: 12px;
+    padding-left: 16%;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    overflow: hidden;
+    border-radius: 3em;
+    box-shadow: 10px 10px 15px rba(0, 0, 0, 0.4);
+    max-height: 88%;
+
+}
+
+.leftsection {
+    background-color: white;
+}
+
+.rightsection {
+    background-color: rgb(250, 246, 246);
+}
+
+
+
+.information {
+    margin-top: 14px;
+    margin-left: 82px;
+}
+
+.input1 {
+    margin-top: 16px;
+    height: 37px;
+    width: 75%;
+    border: 1px solid black;
+    padding-left: 38px;
+    outline: none;
+}
+
+.input-group span {
+    display: block;
+    font-size: 12px;
+}
+
+.input1:hover {
+    border-color: rgb(121, 82, 179);
+    border-width: 1.5px;
+}
+
+i {
+    position: relative;
+    top: 2px;
+    right: 73%;
+    color: rgb(121, 82, 179);
+}
+
+.Signup-button {
+    margin-top: 18px;
+    margin-left: 25%;
+    color: rgb(10, 102, 194);
+    background-color: white;
+    border: 2px solid rgb(10, 102, 194);
+    padding: 12px 38px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+.Signup-button:hover {
+    background-color: rgb(10, 102, 194);
+    color: white;
+}
+
+img {
+    padding-left: 54px;
+    padding-top: 18px;
+    max-height: 70%;
+}
+
+.signin-button {
+    margin-top: 14px;
+    margin-left: 182px;
+    color: rgb(10, 102, 194);
+    background-color: white;
+    border: 2px solid rgb(10, 102, 194);
+    padding: 8px 28px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+.signin-button:hover {
+    background-color: rgb(10, 102, 194);
+    color: white;
+}
+
+.popup {
+    width: 350px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding-top: 22px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    height: 175px;
+}
+
+.popup h2 {
+    margin-bottom: 4px;
+}
+
+.popup p {
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 48%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-button {
+    margin-top: 18px;
+    background-color: rgb(121, 82, 179);
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

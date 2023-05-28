@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/9dc85c2239.js" crossorigin="anonymous"></script>
+    <title>Sign up </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftsection">
+            <header>
+                <h1>Create Account</h1>
+                <p>Enter your personal details and start journey with us</p>
+            </header>
+            <div class="information">
+                <form method="post">
+                    <div class="input-group">
+                        <input type="text" placeholder="Username" class="input1" id="input1"
+                            onkeyup=" ValidationUsername()">
+                        <i class="fa-sharp fa-solid fa-user fa-sm"></i>
+                        <span id="username-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type=" email" placeholder="Email" class="input1" id="input2" onkeyup="ValidationEmail()">
+                        <i class="fa-solid fa-envelope fa-sm "></i>
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" class="input1" id="input3"
+                            onkeyup="validationPassword()">
+                        <i class=" fa-solid fa-lock fa-sm"></i>
+                        <span id="password-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password confirmation " class="input1" id="input4">
+                        <i class="fa-solid fa-lock fa-sm"></i>
+                        <span id="password2-error"></span>
+                    </div>
+                    <input type="button" value="Sign up" class="Signup-button" id="mybutton">
+                </form>
+            </div>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" class="popup-button" onclick="closePopup()">OK, Close</button>
+            </div>
+            <div class="popup" id="popup2">
+                <h2>Sorry!</h2>
+                <p>You have already created an account with this information</p>
+                <button type="button" class="popup-button" onclick="closePopup2()">OK, Close</button>
+            </div>
+        </div>
+        <div class="rightsection">
+            <img src="undraw_mobile_application_re_13u3.svg" alt="">
+            <a href="/loginproject/login.html"><button class="signin-button">Sign in</button></a>
+        </div>
+    </div>
+    <script src="signup.js"> </script>
+</body>
+
+</html>

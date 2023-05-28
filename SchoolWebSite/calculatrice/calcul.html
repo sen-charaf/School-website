@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcul.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <div class="content_box">
+        <div class="right_side">
+            <div class="text_zone">
+                <p id="val_app">0</p>
+            </div>
+            <div class="grid_container">
+                <div class="grid_items top_op" onclick="CE_delete()">
+                    <div class="content">CE</div>
+                </div>
+                <div class="grid_items top_op" onclick="C_delete()">
+                    <div class="content">C</div>
+                </div>
+                <div class="grid_items top_op" onclick="E_delete()">
+                    <div class="content">
+                        <image class="delet_img" src="delete.png" alt="delet_img">
+                    </div>
+                </div>
+                <div class="grid_items right_op " onclick="show('÷')">
+                    <div class="content">÷</div>
+                </div>
+                <div class="grid_items" onclick="show('7')">
+                    <div class="content">7</div>
+                </div>
+                <div class="grid_items" onclick="show('8')">
+                    <div class="content">8</div>
+                </div>
+                <div class="grid_items" onclick="show('9')">
+                    <div class="content">9</div>
+                </div>
+                <div class="grid_items right_op" onclick="show('x')">
+                    <div class="content">x</div>
+                </div>
+                <div class="grid_items" onclick="show('4')">
+                    <div class="content">4</div>
+                </div>
+                <div class="grid_items" onclick="show('5')">
+                    <div class="content">5</div>
+                </div>
+                <div class="grid_items" onclick="show('6')">
+                    <div class="content">6</div>
+                </div>
+                <div class="grid_items right_op" onclick="show('-')">
+                    <div class="content">-</div>
+                </div>
+                <div class="grid_items" onclick="show('1')">
+                    <div class="content">1</div>
+                </div>
+                <div class="grid_items" onclick="show('2')">
+                    <div class="content">2</div>
+                </div>
+                <div class="grid_items" onclick="show('3')">
+                    <div class="content">3</div>
+                </div>
+                <div class="grid_items right_op" onclick="show('+')">
+                    <div class="content">+</div>
+                </div>
+                <div class="grid_items item_0" onclick="show('0')">
+                    <div class="content">0</div>
+                </div>
+                <div class="grid_items" onclick="show('.')">
+                    <div class="content">.</div>
+                </div>
+                <div class="grid_items right_op" onclick="calulate()">
+                    <div class="content">=</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="calcul.js"></script>
+</body>
+
+</html>
